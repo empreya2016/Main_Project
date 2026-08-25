@@ -1,0 +1,171 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfvbdevetl"
+		},
+		"DS_Bulkload_parquet_accountKey": {
+			"value": ""
+		},
+		"DS_SQL_parquet_accountKey": {
+			"value": ""
+		},
+		"LS_AZSQL_password": {
+			"value": ""
+		},
+		"LS_Bulkload_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_parquet_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_Restapi_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_Parquet_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_sasUri": {
+			"value": ""
+		},
+		"DS_Bulkload_parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"DS_SQL_parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"DS_Snowflake_parquet_sasUri": {
+			"value": ""
+		},
+		"LS_AZSQL_properties_typeProperties_server": {
+			"value": "sql-srvr-vb-dev2.database.windows.net"
+		},
+		"LS_AZSQL_properties_typeProperties_database": {
+			"value": "sql-db-vb-dev2"
+		},
+		"LS_AZSQL_properties_typeProperties_userName": {
+			"value": "mohana"
+		},
+		"LS_Bulkload_properties_typeProperties_url": {
+			"value": "https://adslvbraw17.dfs.core.windows.net/"
+		},
+		"LS_CSV_properties_typeProperties_url": {
+			"value": "https://adslvbraw17.dfs.core.windows.net/"
+		},
+		"LS_CSV_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_properties_typeProperties_url": {
+			"value": "https://adslvbraw17.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"LS_JSON_properties_typeProperties_url": {
+			"value": "https://adslvbraw17.dfs.core.windows.net/"
+		},
+		"LS_JSON_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"LS_Restapi_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/7XtbcY/productcategoryname"
+		},
+		"LS_Restapi_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"LS_SFTP_properties_typeProperties_url": {
+			"value": "https://adslvbraw17.dfs.core.windows.net/"
+		},
+		"LS_SFTP_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsource.dfs.core.windows.net/"
+		},
+		"LS_SQL_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"LS_SQL_properties_typeProperties_database": {
+			"value": "olist"
+		},
+		"LS_SQL_properties_typeProperties_userName": {
+			"value": "mohana"
+		},
+		"LS_SQL_CPY_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"LS_SQL_CPY_properties_typeProperties_database": {
+			"value": "olist"
+		},
+		"LS_SQL_CPY_properties_typeProperties_userName": {
+			"value": "mohana"
+		},
+		"LS_SQL_max_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"LS_SQL_max_properties_typeProperties_database": {
+			"value": "olist"
+		},
+		"LS_SQL_max_properties_typeProperties_userName": {
+			"value": "mohana"
+		},
+		"LS_Snowflake_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"LS_Snowflake_Parquet_sasUri": {
+			"value": ""
+		},
+		"SQLKey_properties_typeProperties_baseUrl": {
+			"value": "https://Keyvaultsqlssm.vault.azure.net/"
+		},
+		"Snowflakekeyvault_properties_typeProperties_baseUrl": {
+			"value": "https://Keysnowflake1.vault.azure.net/"
+		},
+		"Tr_sample_bulk_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_bulk"
+		},
+		"Tr_sample_csv_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_csv"
+		},
+		"Tr_sample_excel_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_excel"
+		},
+		"Tr_sample_json_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_json"
+		},
+		"Tr_sample_restApi_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_restApi"
+		},
+		"Tr_sample_sftp_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_sftp"
+		},
+		"Tr_sample_snowflake_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_snowflake"
+		},
+		"Tr_sample_sql_properties_PL_Master_parameters_Trigger": {
+			"value": "Tr_sample_sql"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
