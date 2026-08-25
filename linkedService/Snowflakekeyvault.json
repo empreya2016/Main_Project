@@ -1,0 +1,11 @@
+{
+	"name": "Snowflakekeyvault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://Keysnowflake1.vault.azure.net/"
+		}
+	}
+}

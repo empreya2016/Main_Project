@@ -1,0 +1,15 @@
+{
+	"name": "adfvbdevetl",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a0e2a2f2-c090-42cc-9c96-f67604913a6e",
+		"tenantId": "e3253cb6-29cd-45f9-818f-a72c62938a91"
+	}
+}

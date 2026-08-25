@@ -1,0 +1,29 @@
+{
+	"name": "LS_SQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "olist",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "mohana",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "SQLKey",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlsecret",
+				"secretVersion": "881478d917704bcf8dc5148dc43b31f3"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SQLIR1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

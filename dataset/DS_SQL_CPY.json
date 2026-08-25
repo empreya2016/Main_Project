@@ -1,0 +1,13 @@
+{
+	"name": "DS_SQL_CPY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_CPY",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,53 @@
+{
+	"name": "DS_SFTP_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SFTP_Parquet",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat('SFTP','/',\n         formatDateTime(utcNow(),'yyyy'),'/',\n         formatDateTime(utcNow(),'MM'),'/',\n         formatDateTime(utcNow(),'dd'))",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "review_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "order_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "review_score",
+				"type": "UTF8"
+			},
+			{
+				"name": "review_comment_title",
+				"type": "UTF8"
+			},
+			{
+				"name": "review_comment_message",
+				"type": "UTF8"
+			},
+			{
+				"name": "review_creation_date",
+				"type": "UTF8"
+			},
+			{
+				"name": "review_answer_timestamp",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

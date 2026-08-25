@@ -1,0 +1,69 @@
+{
+	"name": "PL_Master",
+	"properties": {
+		"activities": [
+			{
+				"name": "SET_Trigger_Var",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "TriggerName",
+					"value": {
+						"value": "if(equals(pipeline().parameter.Trigger,null),\n   pipeline().TriggerName,\n   pipeline().parameter.Trigger)",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Invoke_L2_Switch",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "SET_Trigger_Var",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_L2switch",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"Trigger": {
+							"value": "@pipeline().parameters.Trigger",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Trigger": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"Mapping": {
+				"type": "String"
+			},
+			"TriggerName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-08-25T06:12:38Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

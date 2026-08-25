@@ -1,0 +1,12 @@
+{
+	"name": "LS_Snowflake_Parquet",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://blobstoragesrc1.blob.core.windows.net/input",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEZFNkY2MTQ2LUYzRkQtNDFCRS1CMzdGLTRFQkU5QUVCNUYxRV81Y2JmY2YzNS1lNzNkLTRkNGItOTcyNy04NmViMzE3MzI3MjgiDQp9"
+		}
+	}
+}

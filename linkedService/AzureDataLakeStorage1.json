@@ -1,0 +1,11 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"sasUri": "https://blobstoragesrc1.blob.core.windows.net/?input?sp=racwdli&st=2026-08-19T09:05:35Z&se=2026-08-31T17:20:35Z&spr=https&sv=2026-02-06&sr=c&sig=EONMVWGsUCg1RSAd%2FrDA957g%2FuxeNTtu1OPkchO%2FYKI%3D"
+		}
+	}
+}
