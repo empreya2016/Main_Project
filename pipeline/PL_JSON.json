@@ -278,7 +278,7 @@
 						"referenceName": "DS_AZURE_LKUP",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			},
 			{
