@@ -1,0 +1,17 @@
+{
+	"name": "Tr_sample_csv",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Week",
+				"interval": 1,
+				"startTime": "2026-08-28T15:45:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
